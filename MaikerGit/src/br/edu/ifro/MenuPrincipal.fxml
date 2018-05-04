@@ -8,11 +8,9 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.MenuPrincipalController">
+<AnchorPane id="AnchorPane" prefHeight="203.0" prefWidth="454.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.MenuPrincipalController">
     <children>
-        <Button fx:id="button" layoutX="14.0" layoutY="14.0" onAction="#handleButtonAction" text="Clique aqui!" />
-        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
-      <JFXButton buttonType="RAISED" layoutX="109.0" layoutY="14.0" prefHeight="93.0" prefWidth="171.0">
+      <JFXButton fx:id="btnSoma" buttonType="RAISED" layoutX="267.0" layoutY="23.0" onAction="#soma" prefHeight="93.0" prefWidth="151.0" text="Somar">
          <ripplerFill>
             <RadialGradient centerX="0.5222222222222223" centerY="0.5047619047619047" radius="0.37209302325581395">
                <stops>
@@ -22,5 +20,8 @@
             </RadialGradient>
          </ripplerFill>
       </JFXButton>
+      <JFXTextField fx:id="txtNum1" focusColor="#a84040" labelFloat="true" layoutX="33.0" layoutY="44.0" prefHeight="25.0" prefWidth="193.0" promptText="Numero 1" unFocusColor="#1f35dd" />
+      <JFXTextField fx:id="txtNum2" focusColor="#a64141" labelFloat="true" layoutX="33.0" layoutY="125.0" prefHeight="25.0" prefWidth="193.0" promptText="Numero 2" unFocusColor="#1f35dd" />
+      <JFXTextField fx:id="txtResultado" focusColor="#a84040" labelFloat="true" layoutX="275.0" layoutY="125.0" promptText="Resultado" unFocusColor="#1f35dd" />
     </children>
 </AnchorPane>
