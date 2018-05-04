@@ -1,11 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.AlunoController">
-    
+
+<AnchorPane id="AnchorPane" prefHeight="294.0" prefWidth="405.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="br.edu.ifro.AlunoController">
+   <children>
+      <JFXTextField fx:id="txtNome" focusColor="#00ff37" labelFloat="true" layoutX="71.0" layoutY="68.0" prefHeight="25.0" prefWidth="264.0" promptText="Nome" unFocusColor="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXTextField>
+      <JFXButton fx:id="btnSalvar" layoutX="48.0" layoutY="139.0" onAction="#gravarNoBanco" prefHeight="86.0" prefWidth="134.0" ripplerFill="#165cd9" text="Salvar">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnFechar" layoutX="217.0" layoutY="148.0" onAction="#fecharJanela" prefHeight="77.0" prefWidth="116.0" ripplerFill="#da1414" text="Fechar">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
 </AnchorPane>
